@@ -189,7 +189,7 @@ void ordered_structure_array(Product *product, int *product_index, int *choise) 
     }
     // Display structure elements of product array after ordering them alphabitically
     for (int i = 0; i < *product_index; i++) {
-        printf("-Product name: %s\t-code: %lu\t-quantity: %d\t-price: %.2f\t-TTC_price: %.2f\n", product[i].product_name, product[i].code, product[i].quantity, product[i].price, product[i].TTC_price);
+        printf("-Product name: %s\t-code: %lu\t-quantity: %d\t-price: %.2f$\t-TTC_price: %.2f$\n", product[i].product_name, product[i].code, product[i].quantity, product[i].price, product[i].TTC_price);
     }
 }
 
@@ -314,7 +314,7 @@ void sell_product(Product *product, Selled *selled, int *product_index, int *sel
 void display_selled_product(Selled *selled, int *selled_index) {
     int selled_checker = 0;
     for (int i = 0; i < *selled_index; i++) {
-        printf("-Selled product name: %s\t-code: %lu\t-quantity: %d\t-price: %.2f\t-TTC_price: %.2f\n", selled[i].selled_product_name, selled[i].selled_code, selled[i].selled_quantity, selled[i].selled_price, selled[i].selled_TTC_price);
+        printf("-Selled product name: %s\t-code: %lu\t-quantity: %d\t-price: %.2f$\t-TTC_price: %.2f$\n", selled[i].selled_product_name, selled[i].selled_code, selled[i].selled_quantity, selled[i].selled_price, selled[i].selled_TTC_price);
         selled_checker = 1;
     }
     if (selled_checker == 0) printf("\tThere is no selled products yet.\n");
@@ -554,3 +554,4 @@ int main() {
     
     return 0;
 }
+//
